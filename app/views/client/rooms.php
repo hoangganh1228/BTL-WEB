@@ -23,6 +23,7 @@
                 <?php
                     $path = _WEB_HOST.'/public/img/rooms';
                     foreach($roomData as $room) {
+                        $roomPriceFormat = formatNumber($room['gia']);
                         if($room['trangthai'] == 'Trống') {
                             echo <<<data
                                 <div class="card mb-4 border-0 shadow" >
@@ -46,7 +47,7 @@
                                         </div>
                                         </div>
                                         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-                                            <h6 class="mb-4">$room[gia] VND mỗi đêm</h6>
+                                            <h6 class="mb-4">$roomPriceFormat VND mỗi đêm</h6>
                                                 <a href="confirm_bookings?sophong=$room[sophong]" class="btn btn-sm w-100 mt-2 btn-outline-dark">More details</a>
                                         </div>
                                     </div>

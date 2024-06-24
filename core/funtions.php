@@ -79,3 +79,7 @@ function isLogin() {
     return $checkLogin;
 }
 
+function formatNumber($number) {
+    // Định dạng số với dấu phân cách hàng nghìn là dấu chấm và không có chữ số thập phân
+    return number_format($number, 0, '', '.');
+}

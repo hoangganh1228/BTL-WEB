@@ -53,7 +53,7 @@
 
                 if(isset($_SESSION['info_service'])) {
                     $maKhachHang = $_SESSION['userData']['socancuoc'];
-                    
+                    date_default_timezone_set("Asia/Ho_Chi_Minh");
                     $day_order  = $currentDateTime = date('Y-m-d H:i:s');
                     // $soPhong = $_SESSION['info_order']['sophong'];
                     if($filterAll['message'] == 'Successful.') {

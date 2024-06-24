@@ -21,8 +21,10 @@
         <div class="row">
             <div class="col-lg-9 col-md-12 px-4 mb-lg-0 mb-md-0 mb-3">
                 <?php
-                    $path = _WEB_HOST.'/public/img/services';
+                    $path = _WEB_HOST.'/public/img/service/';
                     foreach($serviceData as $service) {
+                        echo $path.$service['anh'];
+                        $servicePriceFormat = formatNumber($service['gia']);
                         echo <<<data
                             <div class="card mb-4 border-0 shadow" >
                                 <div class="row g-0 p-3 align-items-center">
@@ -35,7 +37,7 @@
 
                                     </div>
                                     <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-                                        <h6 class="mb-4">$service[gia] VND</h6>
+                                        <h6 class="mb-4">$servicePriceFormat VND / người</h6>
                                         <a href="service_bookings?id=$service[madichvu]" class="btn btn-sm w-100 mt-2 btn-outline-dark">Chi tiết dịch vụ</a>
                                     </div>
                                 </div>
