@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php $this->view('client/layouts/header', []);?>
+    <?php $this->view('client/layouts/header', [])?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-12 px-4">
@@ -21,14 +21,14 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label class="form-label">Loại phòng</label>
-                                <input name="loaiphong" type="text" value="<?php echo $thongTinPhong['loaiphong']?>" class="form-control shadow-none" required>
+                                <input name="loaiphong" type="text" value="<?php echo $thongTinPhong['tenloaiphong']?>" class="form-control shadow-none" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label class="form-label">Số tầng: </label>
                                 <input name="sotang" type="number" value="<?php echo $thongTinPhong['sotang']?>" class="form-control shadow-none" required>
                             </div><div class="col-md-6 mb-3">
                                 <label class="form-label">Số lượng: </label>
-                                <input name="soluong" type="number" value="<?php echo $thongTinPhong['soluong']?>" class="form-control shadow-none" required>
+                                <input name="soluong" type="number" value="<?php echo $thongTinPhong['soluongkhach']?>" class="form-control shadow-none" required>
                             </div>
                             <div class="col-md-12 mb-3">
                                 <label class="form-label">Trạng thái</label>

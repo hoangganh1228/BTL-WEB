@@ -40,7 +40,7 @@
                                                     Tầng: $room[sotang] 
                                                 </span>
                                                 <span class="badge bg-light text-dark text-wrap ">
-                                                    Số lượng: $room[soluong] 
+                                                    Số lượng: $room[soluongkhach] 
                                                 </span><span class="badge bg-light text-dark text-wrap ">
                                                     Trạng thái: $room[trangthai] 
                                                 </span>

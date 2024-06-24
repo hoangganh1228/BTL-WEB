@@ -13,6 +13,9 @@
                 // Lấy các giá trị từ POST
                 if(isPost()) {
                     $filterAll = filter();
+                    // echo '<pre>';   
+                    // print_r($filterAll);
+                    // echo '</pre>';
                     date_default_timezone_set("Asia/Ho_Chi_Minh");
                     $today_date  = $currentDateTime = date('Y-m-d H:i:s');;
             

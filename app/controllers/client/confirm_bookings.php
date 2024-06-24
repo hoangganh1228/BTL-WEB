@@ -13,7 +13,7 @@ class Confirm_bookings extends Controller
         if(!empty($filterAll)) {
             $soPhong = $filterAll['sophong'];
 
-            $thongTinPhong = $this->model->select([], 'phong', "WHERE sophong = '$soPhong'")[0];
+            $thongTinPhong = $this->model->select([], "phong AS p JOIN loai_phong AS lp ON p.maloaiphong = lp.maloaiphong", "WHERE p.sophong = '$soPhong'")[0];
             // echo '<pre>';   
             // print_r($thongTinPhong);
             // echo '</pre>';
