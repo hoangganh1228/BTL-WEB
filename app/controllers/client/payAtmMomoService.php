@@ -31,9 +31,9 @@
                         'thanhtien' => $thanhtien,
                         'thoigian' => $today_date,
                     ];
-                    // echo '<pre>';   
-                    // print_r($_SESSION);
-                    // echo '</pre>';
+                    echo '<pre>';   
+                    print_r($_SESSION);
+                    echo '</pre>';
                 }
                 
 

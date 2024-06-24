@@ -75,8 +75,7 @@
                             'iddatdv' => $lastInsertId,
                             'madichvu' => $_SESSION['info_service']['madichvu'],
                             'soluong' => $_SESSION['info_service']['soluong'],
-                            'thanhtien' => $_SESSION['info_service']['gia'],
-                            'tongtien' => $_SESSION['info_service']['thanhtien'],
+                            'thanhtien' => $_SESSION['info_service']['thanhtien']
 
                         ];
                         $query2 = $this->model->insert('chi_tiet_dich_vu', $dataInsert2);
