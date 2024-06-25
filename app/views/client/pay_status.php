@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php $this->view('client/layouts/header', []);?>
+    <?php $this->view('inc/header', []);?>
     <div class="container">
         <div class="row">
 

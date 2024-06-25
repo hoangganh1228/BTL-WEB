@@ -53,6 +53,22 @@
                     </form>
                 </div>
             </div>
+            <div class="col-lg-7 col-md-12 px-4 ">
+                
+                <?php
+                    $path = $path = _WEB_HOST.'/public/img/rooms/';
+                    $roomPriceFormat = formatNumber($thongTinPhong['gia']);
+                    echo<<<data
+
+                        <div class="card p-3 shadow-sm rounded">
+                            <img src="$path$thongTinPhong[anh].png" class="img-fluid rounded mb-3">
+                           
+                        </div>
+
+                    data;
+                ?>
+
+            </div>
         </div>
     </div>
 

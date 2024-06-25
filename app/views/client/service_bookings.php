@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php $this->view('client/layouts/header', []);?>
+    <?php $this->view('inc/header', []);?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-12 px-4">
@@ -41,13 +41,12 @@
             </div>
             <div class="col-lg-7 col-md-12 px-4 ">
                 <?php
-                    $path = _WEB_HOST.'/public/img/' . $thongTinDichVu['anh'];
-                    echo $path;
+                    $path = _WEB_HOST.'/public/img/service/' . $thongTinDichVu['anh'];
 
                     echo<<<data
 
                         <div class="card p-3 shadow-sm rounded">
-                            <img src="$path" class="img-fluid rounded mb-3">
+                            <img src="$path.png" class="img-fluid rounded mb-3">
                             <h5>$thongTinDichVu[tendichvu]</h5>
                             <h6>$thongTinDichVu[gia] VND  </h6>
                         </div>
